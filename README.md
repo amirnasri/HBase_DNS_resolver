@@ -1,7 +1,5 @@
 DNS resolver using Hadoop and HBase
 
-Source code: 
-
 • “DNSTools”  folder  contains   a   maven   project   with   two   main   classes:   the
 “BulkLoader”   class   and   the   “QueryTool”   class.   
 “BulkLoader” class performs the data bulk­load to HBase. This class sets up the
