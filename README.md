@@ -3,8 +3,13 @@ DNS resolver using Hadoop and HBase
 Source code: 
 
 • “DNSTools”  folder  contains   a   maven   project   with   two   main   classes:   the
-“BulkLoader”   class   and   the   “QueryTool”   class.   As   explained   above   the
-“BulkLoader” class performs the data bulk­load to HBase and  the “QueryTool”
+“BulkLoader”   class   and   the   “QueryTool”   class.   
+“BulkLoader” class performs the data bulk­load to HBase. This class sets up the
+MR configuration and also provide the mapper code. The reduce task is taken care of
+by the   HfileOutputFormat.configureIncrementalLoad() function. After the data is
+loaded   to   an   Hfile,   it   is   loaded   to   an   HBase   table   using   LoadIncrementalHFiles
+class.
+“QueryTool”
 class is responsible for parsing and performing the queries.
 
 • The shell script  “load_data.sh”  can be used to copy a local file to hdfs, and
