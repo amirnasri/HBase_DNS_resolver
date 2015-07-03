@@ -1,5 +1,3 @@
-#HBase DNS_resolver
-
 DNS resolver using Hadoop and HBase
 ----------------------------------------
 
@@ -14,9 +12,9 @@ class.
 class is responsible for parsing and performing the queries.
 
 * The shell script  “load_data.sh”  can be used to copy a local file to hdfs, and
-then   run   the   MR   job   to   perform   the   bulk­load   operation   (Example   usage:
-./load_data.sh   ~/Downloads/authlogs/@400000005092d13237cb8414.s
-~/Test/auth_log_output table1). 
+then   run   an   MR   job   to   perform   the   bulk-load   operation. Example usage:
+
+    ./load_data.sh   dns_log_file log_output table1 
 
 * The shell script “hbase­pdns.sh” runs the “QueryTool” class jar file to perform
 the query give by the input arguments.
