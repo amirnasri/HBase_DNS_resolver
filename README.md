@@ -15,7 +15,7 @@ then   run   an   MR   job   to   perform   the   bulk-load   operation. Example
 
 		./load_data.sh  dns_log_file  output_file table_name 
 
-* The shell script `hbase_pdns.sh` runs the `QueryTool` jar file to perform
+* The shell script `hbase-pdns.sh` runs the `QueryTool` jar file to perform
 the query give by the input arguments.
 
 * Installation   files:  The   main   installation   files   for   Hadoop,   HBase,   and   Hive are in the `Installation_files` folder. 
