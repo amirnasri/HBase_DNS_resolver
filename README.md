@@ -1,4 +1,4 @@
-DNS resolver using Hadoop and HBase
+DNS resolver using Hadoop, HBase, and Hive
 ----------------------------------------
 
 * `DNSTools`  folder  contains   a   maven   project   with   two   main   classes:   the
